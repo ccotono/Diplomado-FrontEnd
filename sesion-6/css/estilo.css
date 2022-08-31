@@ -1,0 +1,44 @@
+/* se menciona el selector del html que se desea modificar
+
+    La Sintaxis es:
+    selector {
+        atributo1: valor;
+        atributo2: valor ;
+        }
+*/
+
+
+/* 1. selectores por etiqueta */
+
+p {
+    color: rgb(255, 115, 0);
+}
+
+footer {
+    background-color: rgb(0, 145, 19);
+    color: white;
+}
+
+body h1 { 
+    margin-bottom: 30px;
+}
+
+
+/* 2. selectores por clase (linea 81 html)*/
+.enlace-redsocial {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* 3. selectores por ID (linea 31)*/
+#imagen-principal {
+    border: 15px solid green;
+}
+
+/*GLOSARIO:
+ -BORDER: MUESTRA EL LIMITE DE UN ELEMENTO
+ -PADDING: FORMA UN MARCO ENTRE LA IMAGEN Y EL BORDE
+ -MARGIN: ESTABLECE UN AMRGEN POR SOBRE EL BORDE CON OTROS ELEMENTOS*/
+
+/* Al momento de buscar una medida en algo, se recomienda usar la consola del buscador*/

@@ -1,0 +1,9 @@
+BOOTSTRAP: 
+
+-ALERTS: https://getbootstrap.com/docs/5.2/components/alerts/
+
+-DEFAULT CONTAINER: https://getbootstrap.com/docs/5.2/layout/containers/#default-container  (SIRVE PARA DARLE ESPACIO A LA PAGINA, ENVUELVE EL CONTENIDO PRINCIPAL EN UN DIV, SIN TOMAR EL HEAD NI EL FOOTER
+
+-NAVBAR: https://getbootstrap.com/docs/5.2/components/navbar/ (MENÚ Y BARRAS DE NAVEGACIÓN)
+
+LAYOUTS: ORGANIZAR COLUMNAS Y SU COMPORTAMIENTO 

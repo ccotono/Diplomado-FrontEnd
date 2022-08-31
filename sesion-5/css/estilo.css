@@ -1,0 +1,37 @@
+/* se menciona el selector del html que se desea modificar
+
+    La Sintaxis es:
+    selector {
+        atributo1: valor;
+        atributo2: valor ;
+        }
+*/
+
+
+/* 1. selectores por etiqueta */
+header {
+    background-color: rgb(196, 192, 0);
+    color: white;
+}
+
+p {
+    color: rgb(255, 115, 0);
+}
+
+footer {
+    background-color: rgb(0, 145, 19);
+    color: white;
+}
+
+
+/* 2. selectores por clase (linea 81 html)*/
+.enlace-redsocial {
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* 3. selectores por ID (linea 31)*/
+#imagen-principal {
+    border: 15px solid green;
+}

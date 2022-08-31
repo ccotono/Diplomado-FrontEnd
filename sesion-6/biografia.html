@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" /> <!-- Tipo de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- viewport es ara responsive behavior (dispositivos moviles) -->
+    <title> Bio - Philip Kotler</title> <!-- titulo de la pagina, aparece en la pestaña del buscador -->
+    <link rel="shortcut icon" href="favicon.ico" /> <!-- se define el icono del titulo de la pagina -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- los rel estan predifinidos segun el tipo de referencia (buscar los tipos de rel que hay) -->
+
+    <!-- INCORPORAMOS BOOTSTRAP CSS Y JS (BOOTSTRAP JS AL FINAL DEL BODY)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- SE VINCULA EL SCRIPT JS -->
+    <script src="js/script.js"></script>
+
+    <!-- <link> especifica la relación entre el documento actual y un recurso externo -->
+
+</head>
+
+<body>
+    <header>
+        <!-- cabecera de la pagina, en ella van menus de navegacion y otras cosas, en este caso usamos una de BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--cambiamos el tema del navbar a dark o a eleccion-->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="biografia.html">Bio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Libros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class=" container">
+        <main>
+            <!-- en main va el contenido principal de la pagina -->
+            <h1>Bio</h1>
+
+            <!-- se define id para referenciar en y se agrega la class img-fluid para darle responsividad a esta-->
+            <img class="img-fluid" id="imagen-principal" alt="Picture: Philip Kotler"
+                src="https://images.squarespace-cdn.com/content/v1/5b70ba0755b02c6b273319ec/13a4935d-9098-49fc-b8f7-136b77398b95/Book+cover+for+My+Life+as+a+Humanist.docx.png?format=500w" />
+
+            <p>
+                <!-- strong es para poner en negrita o destacar algo -->
+                <strong>Philip Kotler</strong> is known around the world as the “father of modern marketing.” For over
+                50
+                years he has taught at
+                the Kellogg School of Management at Northwestern University. Kotler’s book <strong>Marketing
+                    Management</strong> is the most
+                widely used textbook in marketing around the world. This is his story – How a Ph.D. economist from
+                M.I.T.
+                became
+                the world’s leading marketing authority, the Father of Modern Marketing.
+            </p>
+
+            <p>
+                Philip Kotler is the S. C. Johnson Distinguished Professor of International Marketing at the J. L.
+                Kellogg
+                School of Management. He has been honored as one of the world’s leading marketing thinkers. He received
+                his
+                M.A. degree in economics (1953) from the University of Chicago and his Ph.D. degree in economics (1956)
+                from
+                the Massachusetts Institute of Technology (M.I.T.), and has received honorary degrees from 22
+                universities
+                including Stockholm University, the University of Zurich, Athens University of Economics and Business,
+                Budapest School of Economics and Administrative Science, the Kracow School of Business and Economics,
+                and
+                DePaul University.
+            </p>
+
+            <p>
+                He is author of over one hundred and fifty articles and 90 books, including Principles of Marketing,
+                Marketing for Hospitality and Tourism, Strategic Marketing for Nonprofit Organizations, Social
+                Marketing,
+                Marketing Places, The Marketing of Nations, Confronting Capitalism, Democracy in Decline, and Advancing
+                the
+                Common Good. His research covers strategic marketing, consumer marketing, business marketing,
+                professional
+                services marketing, and e-marketing. He has been a consultant to IBM, General Electric, AT&T, Bank of
+                America, Merck, Motorola, Ford, and others. He has lectured several times in Italy, Sweden, China,
+                Japan,
+                India, Indonesia, Australia, Mexico, Brazil, Chile, and many other countries.
+            </p>
+
+            <p>
+                For more biographical information on Philip Kotler, see <a target="_blank"
+                    href=https://www.amazon.com/My-Adventures-Marketing-Autobiography-Philip/dp/0990576760>My Adventures
+                    in
+                    Marketing</a>, available at <a target="_blank"
+                    href=https://www.amazon.com/My-Adventures-Marketing-Autobiography-Philip/dp/0990576760>Amazon</a>.
+                <strong> Also see My Life as a Humanist, Amazon 2022.</strong>
+                <!-- target _blank es para abrir el link de referencia en una nueva pagina y no en la misma -->
+            </p>
+        </main>
+    </div>
+
+    <section>
+
+        <!-- ALERTS BOOTSTRAP -->
+        <!-- asignamos id en los 2 para manipular en js-->
+        <!-- aplicamos ccs en linea (style) y display none para que se oculten las alertas en la pagina -->
+        <div id="form-mensaje-exitoso" class="alert alert-success" role="alert" style="display: none;">
+            Formulario ingresado con exito
+            <ul></ul>
+        </div>
+
+        <div id="form-mensaje-error" class="alert alert-danger" role="alert" style="display: none;">
+            Error al completar el formulario:
+            <ul></ul>
+        </div>
+
+
+
+        <!-- section representa una seccion generica de un documento  -->
+        <!-- FORMULARIO:  -->
+        <form action="" method="get">
+            <!-- form es una etiqueta que sirve para envolver los controles de formulario  -->
+            <!-- method es como se envian los datos del formulario, se recomienda usar post solo cuando hay donde almacenar los datos-->
+            <!-- action es es la pagina donde se envian los datos del formulario (php en caso de que no se procese con js) -->
+            <label for="nombre">Nombre</label> <!-- labels de toda la vida -->
+            <!-- en for va el id que corresponda  -->
+            <input type="text" id="nombre" name="nombreee" /> <!-- inputs de toda la vida (botones, texto, etc) -->
+            <!-- name es el nombre con que se pasaran los datos al formulario  -->
+
+            <br /> <!-- salto de linea  (provisional, dsp se hará mejor con bootstrap) -->
+            <br />
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" />
+
+            <br />
+            <br />
+
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="F" />
+            <label for="femenino">Femenino</label>
+
+            <br />
+            <br />
+
+            Intereses:<br />
+            <input type="checkbox" value="Marketing Digital" id="marketing-digital" name="intereses" />
+            <label for="marketing-digital">Marketing Digital</label>
+
+            <br />
+            <br />
+
+            <input type="checkbox" value="Email Marketing" id="email-marketing" name="intereses" />
+            <label for="email-marketing">Email Marketing</label>
+
+            <br />
+            <br />
+
+            <input type="checkbox" value="Marketing Directo" id="marketing-directo" name="intereses" />
+            <label for="marketing-directo">Marketing Directo</label>
+
+            <button id="btn-suscribir" type="button">Suscribir</button> <!-- tipo de boton y con q nombre aparecerá  -->
+
+        </form>
+    </section>
+
+
+    <footer>
+        <!-- parte inferior de la pagina, contiene contactos e info -->
+        <p>
+            PHILIP KOTLER, 1281 GULF OF MEXICO DRIVE, APT. 907, LONGBOAT KEY, FL. 34228, USAPKOTLER@AOL,COM
+        </p>
+        <!-- definimos clases para referenciar en el css -->
+        <a class="enlace-redsocial" href="#">facebook</a>
+        <a class="enlace-redsocial" href="#">twitter</a>
+        <a class="enlace-redsocial" target="_blank" href="https://www.instagram.com/ccotono/">instagram</a>
+
+    </footer>
+
+
+    <!-- INCORPORAMOS EL JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Otras alternativas para incorporar Bootstrap-->
+    <!-- NPM -->
+    <!-- YARN -->
+
+</body>
+
+</html>
+
+<!-- LEER DOCUMENTACION OFICIAL DE HTML, CSS Y JS EN W3SCHOOLS O DEVELOPER.MOZILLA.ORG -->
+
+<!-- BOOTSTRAP: https://getbootstrap.com/docs/5.2/getting-started/introduction/-->
+
+<!-- DISPLAY (CSS): https://developer.mozilla.org/es/docs/Web/CSS/display  -->
